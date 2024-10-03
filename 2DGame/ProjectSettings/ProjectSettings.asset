@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: 00000000000000000000000000000000
+  productGUID: 5065b269eeceb45a9bacfed244b12a41
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -909,7 +909,7 @@ PlayerSettings:
   cloudProjectId: ca16f5b3-ea91-4f80-8fd1-135df2c7633b
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
+  projectName: 2DGame
   organizationId: eungyukm
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
