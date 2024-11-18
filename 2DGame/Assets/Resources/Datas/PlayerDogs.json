@@ -1,0 +1,32 @@
+[
+  {
+    "player_number": 0,
+    "dog_name": "치와와",
+    "dog_image_path": "Dogs/Chihuahua",
+    "dog_power": 1
+  },
+  {
+    "player_number": 1,
+    "dog_name": "말티즈",
+    "dog_image_path": "Dogs/Maltese",
+    "dog_power": 1.5
+  },
+  {
+    "player_number": 2,
+    "dog_name": "퍼그",
+    "dog_image_path": "Dogs/Pug",
+    "dog_power": 2
+  },
+  {
+    "player_number": 3,
+    "dog_name": "보더콜리",
+    "dog_image_path": "Dogs/BorderCollie",
+    "dog_power": 2.5
+  },
+  {
+    "player_number": 4,
+    "dog_name": "셰퍼드",
+    "dog_image_path": "Dogs/Shepherd",
+    "dog_power": 3
+  }
+]

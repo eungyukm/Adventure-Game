@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using Newtonsoft.Json;
 
 public class DataManager : MonoBehaviour
 {
@@ -51,7 +53,27 @@ public class DataManager : MonoBehaviour
     
     void Start()
     {
+        // Datas/PlayerDogs json로드
+        // Resources 폴더는 특수한 폴더입니다.
+        // 런타임 에셋로드를 할 수 있습니다.
+        // path를 명시할 때는 .json과 같은 확장자는 사용하지 않습니다.
+        string json = Resources.Load<TextAsset>("Datas/PlayerDogs").text;
+        Debug.Log(json);
         
+        // 역직렬화
+        // List는 크기를 지정할 수 없는 배열을 만들 때 사용합니다.
+        // 배열은 지정된 크기를 넘어서면, 오류가 발생합니다.
+        // int[100] 0 ~ 99 -> 100 error
+        // List<int> intList = new List<int>();
+        // intList.add(1);
+        var playerDogs = JsonConvert.DeserializeObject<List<PlayerDogs>>(json);
+        foreach (PlayerDogs playerDog in playerDogs)
+        {
+            Debug.Log(playerDog.player_number);
+            Debug.Log(playerDog.dog_name);
+            Debug.Log(playerDog.dog_image_path);
+            Debug.Log(playerDog.dog_power);
+        }
     }
 
     
